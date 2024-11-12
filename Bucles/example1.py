@@ -1,3 +1,5 @@
+# Generar todas las tablas de multiplicar del 1 al 10.
+
 """ Tablas de multiplicar con bucle for."""
 for x in range(1, 11):
     
