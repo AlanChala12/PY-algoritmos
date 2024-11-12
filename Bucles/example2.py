@@ -1,3 +1,5 @@
+# Hallar el factorial de un número.
+
 """Con bucle while"""
 user_name = int(input('Ingresa un número entero: '))
 
@@ -10,7 +12,6 @@ while counting > 1:
   factorial = factorial * counting
 
 print(factorial)
-
 
 
 
