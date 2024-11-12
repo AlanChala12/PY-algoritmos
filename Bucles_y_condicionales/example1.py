@@ -1,4 +1,5 @@
 # Leer dos números enteros y determinar cuál de los dos tiene más dígitos.
+
 number_one = int(input('Ingresa un número entero: '))
 number_two = int(input('Ingresa otro número entero: '))
 
