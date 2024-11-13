@@ -1,3 +1,5 @@
+# Leer un número entero de tres dígitos y determinar a cuánto es igual la suma de sus dígitos.
+
 number = int(input('Ingresa un número entero: '))
 
 if number < 10:
@@ -15,6 +17,7 @@ elif number >= 10 and number < 100:
 
 
 elif number >= 100 and number < 1000:
+    
     ultimo_digito = int(number / 10) * 10
     ultimo_digito = number - ultimo_digito
 
