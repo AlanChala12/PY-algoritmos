@@ -1,6 +1,5 @@
 # Leer un número entero de dos dígitos y determinar si ambos dígitos son pares.
 
-
 user_name = int(input('Ingresa un número entero positivo de dos dígitos: '))
 
 if user_name < 10:

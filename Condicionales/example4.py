@@ -1,4 +1,4 @@
-# Leer un número entero de dos dígitos y determinar sisus dos dígitos son primos.
+# Leer un número entero de dos dígitos y determinar si sus dos dígitos son primos.
 
 
 number = int(input('Ingresa un número mayor o igual a 10: '))
