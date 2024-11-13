@@ -19,8 +19,10 @@ if number >= 10:
 
   if x1 == 1 and xx1 == dig1 and y2 == 1 and yy2 == dig2:
     print(f'Ambos dígitos que conforman el número {number}, son primos')
+    
   elif x1 == 1 and xx1 == dig1 or y2 == 1 and yy2 == dig2:
     print(f'Solo un dígito del número {number}, es primo.')
+    
   else:
     print(f'Ningún dígito del número {number}, es primo.')
 
