@@ -1,3 +1,5 @@
+# Leer un número entero de dos dígitos menor que 20 y determinar si es primo.
+
 number = int(input('Ingresa un número entero de dos dígitos, menor que 20: '))
 
 if number > 20:
