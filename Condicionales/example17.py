@@ -1,10 +1,9 @@
-# .Leer unnúmero entero de tres dígitos y determinarsi al menos dos de sus tres dígitos son iguales.
+#Leer un número entero de tres dígitos y determinarsi al menos dos de sus tres dígitos son iguales.
 number = int(input('Ingresa un número entero mayor o igual a cien: '))
 
 print()
 
 if number >= 100:
-    
     x = number // 10
     
     dig1 = x // 10
@@ -23,5 +22,4 @@ if number >= 100:
         print(f'--El número proporcionado no posee dígitos iguales--')
     
 else:
-    
     print('--El número proporcionado es muy pequeño--')
