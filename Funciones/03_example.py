@@ -6,6 +6,7 @@ def cantidad_digitos_pares( entero ):
     while entero != 0:
         entero //= 10
         y = entero % 10
+        entero //= 10
     
         if y % 2 == 0:
             cantidad_digitos += 1
