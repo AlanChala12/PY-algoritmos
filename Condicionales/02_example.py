@@ -1,6 +1,6 @@
 # Leer un número entero de dos dígitos menor que 20 y determinar si es primo.
 
-number = int(input('Ingresa un número entero de dos dígitos, menor que 20: '))
+number = int(input('Entero: '))
 
 if number > 20:
   print('El número debe ser menor que 20 y mayor o igual a 10.')
