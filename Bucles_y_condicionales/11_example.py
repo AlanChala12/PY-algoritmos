@@ -1,4 +1,5 @@
 # Mostrar en pantalla el promedio entero de los n primeros múltiplos de 3 para un número n leído.
+
 x = int(input('Ingresa un número: '))
 promedio = 0
 contador_de_multiplos = 0
