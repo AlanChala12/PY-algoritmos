@@ -1,6 +1,6 @@
 #Leer dos números enteros y mostrar todos los múltiplos de 5 comprendidos entre el menor y el mayor.
-x = int(input('Ingresa un número entero: '))
-y = int(input('Ingresa otro número entero: '))
+x = int(input('Entero: '))
+y = int(input('Segundo entero: '))
 
 entero_menor = min(x, y)
 entero_mayor = max(x, y)
