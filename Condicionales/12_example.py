@@ -1,4 +1,5 @@
 # Leer un número entero de dos dígitos y determinar si un dígito es múltiplo del otro.
+
 number = int(input('Ingresa un número entero que contenga dos dígitos: '))
 
 dig1 = number // 10
