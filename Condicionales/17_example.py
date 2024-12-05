@@ -1,4 +1,4 @@
-#Leer un número entero de tres dígitos y determinarsi al menos dos de sus tres dígitos son iguales.
+#Leer un número entero de tres dígitos y determinar si al menos dos de sus tres dígitos son iguales.
 number = int(input('Ingresa un número entero mayor o igual a cien: '))
 
 print()
