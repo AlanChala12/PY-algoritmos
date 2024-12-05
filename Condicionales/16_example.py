@@ -6,11 +6,9 @@ print()
 if number >= 100:
     
     x = number // 10
-    
     dig1 = x // 10
     dig2 = x % 10
     dig3 = number % 10
-    
     result = dig1 + dig2 + dig3
     
     print(f'La suma de los dígitos del número {number}, es de: {result}')
