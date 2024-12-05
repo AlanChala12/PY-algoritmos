@@ -1,4 +1,5 @@
 # Leer un número entero de 3 dígitos y determinar si tiene el dígito 1.
+
 x = int(input('Ingresa un entero mayor o igual a cien: '))
 x = str(x)
     
