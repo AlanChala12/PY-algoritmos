@@ -14,7 +14,7 @@ elif 10 <= number1 < 100 and 10 <= number2 < 100 and 10 <= number3 < 100:
     condicion = dig1_number1 == dig2_number2 == dig3_number3
     
     if condicion:
-        print(f'Los dígitos son iguales')
+        print(f'Los penúltimos dígitos de los números {number1}, {number2} y {number3} son iguales')
     
 elif 100 <= number1 < 1000 and 100 <= number2 < 1000 and 100 <= number3 < 1000:
     dig1_number1 = (number1 // 10) % 10
@@ -24,7 +24,7 @@ elif 100 <= number1 < 1000 and 100 <= number2 < 1000 and 100 <= number3 < 1000:
     condicion1 = dig1_number1 == dig2_number2 == dig3_number3
     
     if condicion1:
-        print(f'Los dígitos son iguales')
+        print(f'Los penúltimos dígitos de los números {number1}, {number2} y {number3} son iguales')
         
 else:
     print(f'Proporciona números que contenga la misma cantidad de dígitos')
