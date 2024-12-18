@@ -1,33 +1,23 @@
-# Registro de productos.
 productos = {}
 
-def productosRegistro(a, b, c):
-    
-    if a in productos:
-        print(f'El producto "{a}" ya ha sido registrado')
-        
+def registrar_producto(nombre, valor, cantidad):
+    if nombre in productos:
+        print('El producto ya ha sido registrado')
     else:
         producto = {
-        'precio': b,
-        'cantidad': c
-        } 
-    
-        productos[a] = producto
-        print('¡REGISTRO EXITOSO!')
-
-condicion = True
-
-while condicion:
-    x = input('''1. Registro de productos
-                 2. Salir''')
-    
-    if x == "1":
-        nombreProducto = input('Producto: ')
-        valorProducto = float(input('Valor: '))
-        cantidadProducto = int(input('Cantidad: '))
-        productosRegistro(nombreProducto, valorProducto, cantidadProducto)
+        'valor': valor,
+        'cantidad': cantidad
+        }
         
-    if x == "2":
-        condicion = False
+    productos[nombre] = producto
+    
+def registrar_compra(nombre, cantidad):
+    if nombre in productos:
         
-print(productos)
+        if cantidad > productos[nombre]['cantidad']:
+            print('!Los productos son insuficientes¡')
+        else:
+            productos[nombre]['cantidad'] -= cantidad 
+    else:
+        print(f'El producto "{nombre}", no se encuentra en la base de datos.')
+        
