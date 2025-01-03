@@ -2,7 +2,7 @@
 Este repositorio contiene una colección de ejercicios en Python diseñados para fortalecer las habilidades de programación y resolver problemas. Cada ejercicio abarca diferentes áreas de la programación en Python.
 
 ## Contenido
-La carpeta principal del repositorio contiene subcarpetas con los ejercicios organizados por temas.
+La carpeta principal del repositorio contiene subcarpetas con los ejercicios organizados por temas. 
 
 ## Requisitos
 Para ejecutar estos ejercicios necesitarás tener instalado:
