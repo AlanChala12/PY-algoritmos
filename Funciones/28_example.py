@@ -6,7 +6,7 @@ def aparaciones(vector, digito):
     
     for i in vector:
         cadena = str(i)
-        cantidad_de_apariciones = cadena.count(digito)
+        cantidad_de_apariciones = cadena.count(digito) + cantidad_de_apariciones
         
     return f'El dígito {digito} se encuentra {cantidad_de_apariciones} vez/veces en el vector {vector}'
         
