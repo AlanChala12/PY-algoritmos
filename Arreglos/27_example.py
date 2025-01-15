@@ -1,4 +1,4 @@
-# Leer 10 números enteros, almacenarlos en un vector y determinar a cuánto es igual la suma de los dígitos pares de cada uno de los números leídos.
+# Leer 10 números enteros, almacenarlos en un vector y determinar a cuánto es igual la suma de los números pares.
 
 try: 
     numeros = [ int(input(f'Entero {i + 1}: ')) for i in range(10) ]
