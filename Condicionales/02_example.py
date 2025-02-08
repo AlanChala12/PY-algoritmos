@@ -1,19 +1,23 @@
 # Leer un número entero de dos dígitos menor que 20 y determinar si es primo.
 
-number = int(input('Entero: '))
+try:
+  num = int(input('Ingresa un número entero: '))
+  is_prim = True
 
-if number > 20:
-  print('El número debe ser menor que 20 y mayor o igual a 10.')
+  if 10 <= num <= 20:
+      for i in range(2, num):
+        if num % 2 == 0:
+          is_prim = False
+          break
 
-elif number <= 20 and number >= 10:
-
-  division = number / number
-  division_por_uno = number / 1
-
-  if division == 1 and division_por_uno == number:
-    print(f'El número {number}, es primo.')
+      if is_prim:
+        print('Es primo')
+      else:
+        print('No es primo')
+        
   else:
-    print(f'El número {number}, no es primo.')
-
-else:
-  print('El número debe estar entre 10 y 20.')
+    print('Por favor, ingresa un número entero, comprendido entre 10 y 20')
+      
+  
+except ValueError:
+  print('Por favor, ingresa un número entero, comprendido entre 10 y 20')
