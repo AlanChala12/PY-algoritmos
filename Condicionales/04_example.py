@@ -1,25 +1,39 @@
 # Leer un número entero de dos dígitos y determinar si sus dos dígitos son primos.
-number = int(input('Ingresa un número mayor o igual a 10: '))
-
-dig1 = number // 10
-dig2 = number % 10
-
-if number >= 10:
-
-  x1 = dig1 / dig1
-  xx1 = dig1 / 1
-
-  y2 = dig2 / dig2
-  yy2 = dig2 / 1
-
-  if x1 == 1 and xx1 == dig1 and y2 == 1 and yy2 == dig2:
-    print(f'Ambos dígitos que conforman el número {number}, son primos')
+try:
+  num = int(input('Ingresa un número entero: '))
+  is_prim = True
+  primos = 0
+  
+  if 10 <= num < 100:
+    dig1 = num // 10
+    dig2 = num % 10
     
-  elif x1 == 1 and xx1 == dig1 or y2 == 1 and yy2 == dig2:
-    print(f'Solo un dígito del número {number}, es primo.')
+    for i in range(2, dig1):
+      if dig1 % 2 == 0:
+        is_prim = False
+        break
+      
+    if is_prim:
+      primos += 1
+      is_prim = True
+        
+    for i in range(2, dig2):
+      if dig1 % 2 == 0:
+        is_prim = False
+        break
+      
+    if is_prim:
+      primos += 1
+              
+    if primos == 2:
+      print(f'Ambos dígitos, del número {num} !SON PRIMOS¡')
+    elif primos == 1:
+      print(f'Solo un dígito, del número {num} !ES PRIMOS¡')
+    else:
+      print(f'Ningún dígito del número {num}, es primo')
     
   else:
-    print(f'Ningún dígito del número {number}, es primo.')
-
-else:
-  print(f'El número {number}, debe ser mayor o igual a 10.')
+    print('Por favor, ingresa un número entero comprendido entre 10 y 99')
+  
+except ValueError:
+  print('Por favor, ingresa valores númericos')
