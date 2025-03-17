@@ -1,4 +1,4 @@
-# Cree una función que determine si un año es bisiesto 
+# Cree una función que determine si un año es bisiesto.
 
 def is_leap(year):
     leap = False
