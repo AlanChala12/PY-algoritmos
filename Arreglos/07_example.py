@@ -1,12 +1,7 @@
 # Leer 10 enteros, almacenarlos en un vector y determinar en qué posición del vector está el mayor número primo leído.
-numeros = []
+numeros = [ int(input(f'Entero { i + 1 }:')) for i in range(10) ]
 numeros_primos = []
 es_primo = True
-
-
-for z in range(1, 11):
-    numero = int(input(f'Entero {z}: '))
-    numeros.append(numero)
     
 for i in numeros:
     for y in range(2, i):
