@@ -1,9 +1,6 @@
 # Leer 10 números enteros, almacenarlos en un vector y determinar en qué posiciones se encuentran los números con más de 3 dígitos.
 
-numeros = []
-for i in range(0, 11):
-    numero = int(input(f'Entero {i}: '))
-    numeros.append(numero)
+numeros = [ int(input(f'Entero { i + 1 }: ')) for i in range(10) ]
     
 for x in numeros:
     if x >= 100:
