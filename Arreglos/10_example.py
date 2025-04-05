@@ -1,10 +1,6 @@
 # Leer 10 números enteros, almacenarlos en un vector y determinar cuántos números tienen, de los almacenados allí, menos de 3 dígitos.
-numeros = []
+numeros = [ int(input(f'Entero { i + 1 }: ')) for i in range(10) ]
 contador = 0
-
-for i in range(1, 11):
-    numero = int(input(f'Entero {i}: '))
-    numeros.append(numero)
     
 for x in numeros:
     if x < 100:
