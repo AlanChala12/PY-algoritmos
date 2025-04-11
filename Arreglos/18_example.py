@@ -1,22 +1,12 @@
-# Leer 10 números enteros, almacenarlos en un vector y determinar cuáles son los números múltiplos de 5 y en qué posiciones están.
+# Leer 10 números enteros, almacenarlos en un vector y determinar cuáles son los números múltiplos de 5 y en qué posiciones están
 
-enteros = []
-multiplos = []
-
-for i in range(1, 11):
-    numeros = int(input(f'Entero {i}: '))
-    enteros.append(numeros)
-
-print('Los múltiplos de 5 son:')
-print('Valor / Índice')
-print()
-
-for indice, valor in enumerate(enteros):
-    if valor % 5 == 0:
-        multiplos.append(valor)
-        print(f'{valor} = {indice}')
-
-if not multiplos: 
-    print('No se encontraron múltiplos de 5.')
-
-print(f'\nVector de enteros: {enteros}')
+try:
+    enteros = [ int(input(f'Entero { x + 1 }: ')) for x in range( 10 ) ]
+    print('--Múltiplos de cinco--')
+    
+    for i, num in enumerate( enteros ):
+        if num % 5 == 0:
+            print(f'Valor: { num } - Posición: { i + 1 }')
+    
+except ValueError:
+    print('Ingresa valores numéricos')
