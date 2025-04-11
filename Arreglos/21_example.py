@@ -1,17 +1,16 @@
 # Leer 10 números enteros, almacenarlos en un vector y determinar en qué posiciones están los números positivos.
-enteros = []
-positivos = []
 
-for i in range(1, 11):
-  numeros = int(input(f'Entero {i}: '))
-  enteros.append(numeros)
+enteros = [ int(input(f'Entero {i + 1}: ')) for i in range( 10 ) ]
+positivos = 0
 
-print()
-print('Valor / Indice')
+print('##Números positivos##')
 
-for indice, valor in enumerate(enteros):
-  if valor > 0:
-    print(f'{valor}: {indice}')
+for i, n in enumerate( enteros ):
+  
+  if n > 0:
+    positivos += 1
+    print(f'Número: { n } - Posición: { i + 1 }')
+    
+if positivos == 0:
+  print(f'No se encontraron números positivos en el vector { enteros }')
 
-if len(positivos) == 0:
-  print(f'No hay números negativos en el vector {enteros}')
