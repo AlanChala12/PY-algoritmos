@@ -1,23 +1,23 @@
 # Leer dos números enteros de dos dígitos y determinar a cuánto es igual la suma de todos los dígitos.
  
-x = int(input('Ingresa un número entero positivo mayor o igual a diez: '))
-y = int(input('Ingresa otro número entero positivo mayor o igual a diez: '))
+try:
+    num1 = int(input('Entero 1: '))
+    num2 = int(input('Entero 2: '))
 
-print()
-
-if 10 <= x < 100 and 10 <= y < 100:
-    
-    dig1_x = x // 10
-    dig2_x = x % 10
-    
-    dig1_y = y // 10
-    dig2_y = y % 10
-    
-    result = dig1_x + dig2_x + dig1_y + dig2_y
-    
-    print(f'La suma de los dígitos de los números {x} y {y}, es de: {result}')
+    if len(str( num1 )) == 2 and len(str( num2 )) == 2:
         
-else:
-    
-    print('¡ERROR! Ambos números deben cumplir la condición solicitada.')
-    
+        digs = []
+        for i in str( num1 ):
+            digs.append(int( i ))
+            
+        for y in str( num2 ):
+            digs.append(int( y ))
+        
+        sumDigs = sum( digs )
+        print(f'La suma de dígitos de los números { num1 } y { num2 } es: { sumDigs }')
+        
+    else:
+        print('Ingresa numeros de dos dígitos')
+        
+except ValueError:
+    print('Ingresa valores numéricos')
