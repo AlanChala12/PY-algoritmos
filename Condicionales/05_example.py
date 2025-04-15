@@ -1,14 +1,14 @@
-# Leer un número entero de tres dígitos y determinar a cuánto es igual la suma de sus dígitos.
+# Leer un número entero y determinar a cuánto es igual la suma de sus dígitos.
 
-number = int(input('Entero: '))
+try:
+    num = int(input('Entero: '))
+    digs = []
 
-if number < 100:
-    print('--Ingresa un número mayor o igual a cien--')
+    for i in str(num):
+        digs.append( int(i) )
+        
+    sumDigs = sum( digs )
+    print(f'La suma de dígitos del número { num } es { sumDigs }')
     
-else:
-    dig1 = number // 100
-    dig2 = (number // 10) % 10
-    dig3 = number % 10
-    
-    result = dig1 + dig2 + dig3
-    print(f'La suma de los dígitos del número {number}, es de {result}')
+except ValueError:
+    print('Ingresa valores numéricos')
